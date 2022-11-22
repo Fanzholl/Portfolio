@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: red;
+}
+
+.start_display {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/space.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.start_display h1 {
+    width: auto;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: calc(50% + 30px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    height: 1000px;
+    display: block;
+    margin: auto;
+    position: relative;
+    background-color: blue;
+}
+
+.burger_container {
+    height: 30px;
+    margin: 15px 20px 10px 0;
+    float: right;
+    cursor: pointer;
+}
+
+.burger {
+    width: 40px;
+    height: 6px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.burger:after {
+    width: 40px;
+    height: 6px;
+    content: '';
+    display: block;
+    transform: translateY(6px);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.burger:before {
+    width: 40px;
+    height: 6px;
+    content: '';
+    display: block;
+    transform: translateY(-12px);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.menu {
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    transition-duration: 0.5s;
+    background-color: black;
+}
+
+.close {
+    width: 40px;
+    height: 6px;
+    margin: 30px 20px 0 0;
+    display: block;
+    float: right;
+    cursor: pointer;
+    transform: rotate(45deg);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.close:before {
+    width: 40px;
+    height: 6px;
+    content: '';
+    display: block;
+    border-radius: 10px;
+    transform: rotate(-90deg);
+    background-color: white;
+}
+
