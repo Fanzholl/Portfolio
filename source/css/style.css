@@ -17,7 +17,6 @@ header {
     width: 100%;
     height: auto;
     display: block;
-    background-color: red;
 }
 
 .start_display {
@@ -89,7 +88,7 @@ main {
 }
 
 .menu {
-    width: 400px;
+    width: 40%;
     height: 100vh;
     position: absolute;
     right: 0;

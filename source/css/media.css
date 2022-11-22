@@ -1,0 +1,8 @@
+@media all and (max-width: 800px) {
+    .menu {
+        width: 100%;
+    }
+    body {
+        color: red;
+    }
+}
