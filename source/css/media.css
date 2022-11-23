@@ -28,3 +28,24 @@
         right: -44px;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .start_text h1 {
+        font-size: 30px;
+        padding: 0 20px 0 20px;
+    }
+
+    .start_text p {
+        font-size: 20px;
+    }
+
+    .start_text  p:before {
+        width: 30px;
+        left: -34px;
+    }
+
+    .start_text  p:after {
+        width: 30px;
+        right: -34px;
+    }
+}
