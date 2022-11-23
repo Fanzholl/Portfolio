@@ -6,3 +6,25 @@
         color: red;
     }
 }
+
+@media screen and (max-width: 520px) {
+
+    .start_text h1 {
+        font-size: 40px;
+        padding: 0 20px 0 20px;
+    }
+
+    .start_text p {
+        font-size: 30px;
+    }
+
+    .start_text  p:before {
+        width: 40px;
+        left: -44px;
+    }
+
+    .start_text  p:after {
+        width: 40px;
+        right: -44px;
+    }
+}

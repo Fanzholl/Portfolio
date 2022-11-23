@@ -1,3 +1,11 @@
+@keyframes startDisplayText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 * {
     margin: 0;
     padding: 0;
@@ -13,48 +21,76 @@ header {
     z-index: 1;
 }
 
-.container {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .start_display {
     width: 100%;
     height: 100vh;
-    position: relative;
-    background-image: url(../img/space.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../img/mountain3.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 
-.start_display h1 {
-    width: auto;
-    height: auto;
-    display: block;
-    position: absolute;
-    top: calc(50% + 30px);
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: center;
+.start_text {
+    opacity: 0;
+    animation: startDisplayText 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.start_text h1 {
+    font-size: 55px;
     color: white;
+    padding: 0 10px 0 10px;
+    text-transform: uppercase;
+}
+
+.start_text p {
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.start_text  p:before {
+    width: 60px;
+    height: 2px;
+    content: " ";
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: -70px;
+    top: calc(50% - 1px);
+}
+
+.start_text p:after {
+    width: 60px;
+    height: 2px;
+    content: " ";
+    display: block;
+    background-color: white;
+    position: absolute;
+    right: -70px;
+    top: calc(50% - 1px);
 }
 
 main {
-    max-width: 1200px;
-    height: 1000px;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: auto;
     position: relative;
-    background-color: blue;
+    /*background-color: black;*/
 }
 
 .burger_container {
     height: 30px;
     margin: 15px 20px 10px 0;
+    display: block;
     float: right;
     cursor: pointer;
 }
@@ -104,6 +140,8 @@ main {
     display: block;
     float: right;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
     transform: rotate(45deg);
     border-radius: 10px;
     background-color: white;
@@ -117,5 +155,49 @@ main {
     border-radius: 10px;
     transform: rotate(-90deg);
     background-color: white;
+}
+
+.menu_list_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.menu_list_container ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+}
+
+.menu_list_container li {
+    margin-bottom: 26px;
+}
+
+.menu_list_container a {
+    width: 100%;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    user-select: none;
+}
+
+.menu_list_container li:last-child {
+    margin-bottom: 0;
+}
+
+.about_me {
+    max-width: 100%;
+    height: 620px;
+    padding-top: 100px;
+    display: block;
+    margin: auto;
+    background-image: url("../img/10.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
