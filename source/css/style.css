@@ -125,7 +125,6 @@ main {
 
 .menu {
     width: 40%;
-    height: 100vh;
     position: absolute;
     right: 0;
     transform: translateX(100%);
