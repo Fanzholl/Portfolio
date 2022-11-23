@@ -11,8 +11,5 @@ function closeMenu() {
 let menu = document.querySelector('.menu')
 let close = document.querySelector('.close');
 let burger = document.querySelector('.burger_container');
-let heighter = document.documentElement.clientHeight;
-menu.style.height = heighter + 'px';
-console.log(heighter);
 burger.addEventListener('click', openMenu);
 close.addEventListener('click', closeMenu);
